@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="back-button" onclick="window.location.href='../index.html'">Back</button>
+    <div class="form-container">
+        <h1>Add New Hotel</h1>
+
+        <label for="hotelName">Hotel Name</label>
+        <input type="text" required id="hotelName" placeholder="Enter Hotel Name">
+
+        <label for="hotelPhoto">Hotel Picture</label>
+        <input type="url" required id="hotelPhoto" placeholder="Paste Hotel Picture URL">
+
+        <label for="proprietorPhone">Proprietor Phone Number</label>
+        <input type="number" required id="proprietorPhone" placeholder="Enter Proprietor Phone Number">
+
+        <label for="locationSelect">Hotel Location</label>
+        <select required id="locationSelect">
+            <option selected disabled value="">Select</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Faisalabad">Faisalabad</option>
+            <option value="Multan">Multan</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Sialkot">Sialkot</option>
+            <option value="Peshawar">Peshawar</option>
+            <option value="Sukkur">Sukkur</option>
+        </select>
+
+        <button id="addHotel">Add Hotel</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js">    </script>
+    <script src="../Hotels List/app.js"></script> <!--|||||||||| Hotel data||||||||| -->
+</body>
+
+</html>
