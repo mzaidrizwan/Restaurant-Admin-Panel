@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Hotel</title>
+    <title>Admin Panel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <button class="back-button" onclick="window.location.href='../index.html'">Back</button>
-    <div class="form-container">
-        <h1>Add New Hotel</h1>
+    <button id="toggle-button">Add New Hotel</button>
 
+    <div id="toggle-div" class="form-container">
+        <h1>Add New Hotel</h1>
         <label for="hotelName">Hotel Name</label>
         <input type="text" required id="hotelName" placeholder="Enter Hotel Name">
 
@@ -36,13 +36,38 @@
             <option value="Peshawar">Peshawar</option>
             <option value="Sukkur">Sukkur</option>
         </select>
-
-        <button id="addHotel">Add Hotel</button>
+        <button onclick="add()" id="addHotel">Add Hotel</button>
     </div>
 
+
+    <button class="allHotelBtn" onclick="window.location.href = './New folder/index.html'">See Hotels List</button>
+
+    <div class="hotels-container show"></div>
+
+    <br><a href="#toggle-button">Go to Top</a>
+
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="app.js">    </script>
-    <script src="../Hotels List/app.js"></script> <!--|||||||||| Hotel data||||||||| -->
+
+    <script>
+        let toggleBtn = document.getElementById('toggle-button');
+        toggleBtn.innerText = "Add New Hotel";
+
+        let form = document.getElementById('toggle-div');
+        form.style.display = 'none'
+        toggleBtn.addEventListener('click', () => {
+            if (form.style.display === 'block' || form.style.display === '') {
+                form.style.display = 'none';
+                toggleBtn.innerText = "Add New Hotel";
+            } else {
+                form.style.display = 'block';
+                toggleBtn.innerText = "Hide this Form";
+
+            }
+        });
+
+
+    </script>
 </body>
 
 </html>

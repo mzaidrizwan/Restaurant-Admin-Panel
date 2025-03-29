@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Hotels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="back" onclick="window.location.href='../index.html'">Back</button>
+    <br><br>
+    <label for="locatn">Categorized by Location</label>
+    <select required id="locatn">
+        <option selected disabled value="">Select</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Rawalpindi">Rawalpindi</option>
+        <option value="Faisalabad">Faisalabad</option>
+        <option value="Multan">Multan</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Sialkot">Sialkot</option>
+        <option value="Peshawar">Peshawar</option>
+        <option value="Sukkur">Sukkur</option>
+    </select>
+    <button id="searchByLocationBTN">Show Hotels</button>
+    <div class="show_two"></div><!-- to showcase all data given by JavaScript -->
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
