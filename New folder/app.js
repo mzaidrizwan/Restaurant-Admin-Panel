@@ -7,9 +7,9 @@ document.getElementById("searchByLocationBTN").addEventListener("click", () => {
 
     if (!(citySelect.value == '')) {
 
-
         showContainer.innerHTML = "";
         const filteredData = data_2.filter(hotel => hotel.locationSelect === citySelect.value);
+
 
         if (filteredData.length === 0) {
             showContainer.innerHTML = "<p >No hotels found for the selected location.</p>";

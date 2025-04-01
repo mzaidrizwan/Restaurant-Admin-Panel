@@ -42,12 +42,24 @@
 
     <button class="allHotelBtn" onclick="window.location.href = './New folder/index.html'">See Hotels List</button>
 
+
+
+
+<div class="search-container">
+    <select name="" id="searchBy">
+        <option selected value="hotelName">Search By Hotel Name</option>
+        <option value="locationSelect">Search By Hotel Location</option>
+        <option value="proprietorPhone">Search By Owner Phone</option>
+    </select>
+    <input placeholder="Search here" type="text" name="" id="myInput">
+</div>
     <div class="hotels-container show"></div>
+
+
 
     <br><a href="#toggle-button">Go to Top</a>
 
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
         let toggleBtn = document.getElementById('toggle-button');
@@ -65,9 +77,11 @@
 
             }
         });
-
-
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </body>
 
 </html>
